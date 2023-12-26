@@ -1143,8 +1143,8 @@ class PoeApi:
                    api_key=None, api_bot=False, api_url=None, prompt_public=True, pfp_url=None, linkification=False,  
                    markdown_rendering=True, suggested_replies=False, private=False, temperature=None, customMessageLimit=None, 
                    messagePriceCc=None, shouldCiteSources=True, knowledgeSourceIds:dict = {}):
-        if base_model not in BOT_CREATION_MODELS:
-            raise ValueError(f"Invalid base model {base_model}. Please choose from {BOT_CREATION_MODELS}")
+        # if base_model not in BOT_CREATION_MODELS:
+        #     raise ValueError(f"Invalid base model {base_model}. Please choose from {BOT_CREATION_MODELS}")
         # Auto complete profile
         try:
             self.send_request('gql_POST', 'MarkMultiplayerNuxCompleted', {})
